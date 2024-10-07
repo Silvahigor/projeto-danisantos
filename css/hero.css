@@ -1,0 +1,48 @@
+/* Estilos para a Hero Section */
+.hero-section {
+  background-color: #af934a; /* Cor de fundo semelhante à que você mostrou na imagem */
+  padding: 50px 0;
+}
+
+.hero-image img {
+  width: 100%; /* Garante que a imagem ocupe toda a largura da coluna */
+  object-fit: cover;
+  opacity: 100%;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Garante que o conteúdo das redes sociais fique centralizado verticalmente */
+}
+
+/* Ajustes de redes sociais */
+.btn_wrapper .social-icon {
+  font-size: 1.8rem;
+  background-color: white;
+  color: #af934a; /* Cor dos ícones semelhante à paleta que você mostrou */
+  border: 2px solid white;
+}
+
+.btn_wrapper .social-icon:hover {
+  background-color: #af934a;
+  color: white;
+  border: 2px solid #af934a;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .hero-section {
+    padding: 20px 0;
+  }
+
+  .hero-content {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .hero-image img {
+    margin-top: 20px;
+  }
+}
