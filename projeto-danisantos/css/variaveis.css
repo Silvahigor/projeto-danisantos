@@ -1,0 +1,16 @@
+/* ==== CSS VARIABLES ==== */
+:root {
+    --primary-color: #af934a;
+    --secondary-color: #334157;
+    --link-color: #030303;
+    --btn-hover-color: #333335;
+    --bg-color: #fafbfb;
+    --lg-heading: #161c2d;
+    --text-content: #bea966;
+    --fixed-header-height: 4.5rem;
+    --font-size-body-text: clamp(14px, 1.6vw, 16px);
+    --h1-font-size: calc(var(--font-size-body-text) * 2.4);
+    --h2-font-size: calc(var(--h1-font-size) - 15px);
+    --h3-font-size: calc(var(--h2-font-size) - 8px);
+  }
+  

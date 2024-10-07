@@ -1,0 +1,59 @@
+/* Arredondar bordas das imagens */
+.carousel-inner img {
+    width: 100%;
+    height: 500px; /* Altura do carrossel */
+    object-fit: cover; /* Ajusta a imagem para cobrir o carrossel */
+    border-radius: 15px; /* Valor do arredondamento das bordas */
+}
+  
+/* Estilos da legenda */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para a legenda */
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+}
+  
+/* Centralizar as setas de navegação */
+.carousel-control-prev,
+.carousel-control-next {
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Garante o alinhamento central exato */
+    width: 50px;
+    height: 50px;
+    background-color: transparent; /* Remove o fundo */
+    border: none; /* Remove bordas adicionais */
+}
+  
+/* Estilos para os ícones das setas */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent; /* Remove fundo do ícone */
+    filter: none; /* Remove filtro de cor */
+    background-image: none; /* Remove a imagem padrão das setas */
+    border: none; /* Remove qualquer borda */
+    width: 30px;
+    height: 30px;
+    content: '';
+}
+
+/* Adicionando setas personalizadas com a cor #af934a */
+.carousel-control-prev-icon {
+    border-left: 2px solid #daaa31; /* Setinha para a esquerda na cor */
+    border-top: 2px solid #fdb500;
+    transform: rotate(-45deg); /* Rotação para fazer a seta */
+}
+
+.carousel-control-next-icon {
+    border-right: 2px solid #f8b201; /* Setinha para a direita na cor */
+    border-top: 2px solid #ffb700;
+    transform: rotate(45deg); /* Rotação para fazer a seta */
+}
+/* Estilos da legenda com fundo claro */
+.carousel-caption {
+    background-color: rgba(255, 255, 255, 0.295); /* Cor clara com leve transparência */
+    padding: 15px;
+    border-radius: 10px;
+    color: #333; /* Ajusta a cor do texto para contraste com o fundo claro */
+    opacity: 80%;
+}
