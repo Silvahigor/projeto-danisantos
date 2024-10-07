@@ -1,0 +1,41 @@
+/* ==== Estilos Personalizados para as Guias de Contato ==== */
+.custom-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .custom-button {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #cdb87f; /* Cor personalizada */
+    border-radius: 15px;
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
+  }
+  
+  .custom-button i {
+    font-size: 1.5rem; /* Tamanho dos ícones */
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+  }
+  
+  .custom-button:hover {
+    background-color: #cdb87f; /* Cor ao passar o mouse */
+  }
+  
+  /* Responsividade: ajuste para telas menores */
+  @media screen and (max-width: 768px) {
+    .custom-button {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .custom-button i {
+      margin-bottom: 0.5rem;
+    }
+  }
+  

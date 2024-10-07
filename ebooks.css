@@ -1,0 +1,173 @@
+/* ==== HEADER ==== */
+.header {
+    height: var(--fixed-header-height);
+    padding: 0 1.7rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+  
+/* ==== NAV ==== */
+.nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+/* ==== LOGO ==== */
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.logo-principal {
+    height: 80px;
+    transition: transform 0.3s ease-in-out;
+}
+  
+.logo-text {
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #bea966; /* Cor dourada diretamente */
+    margin-left: 10px; /* Ajuste o espaçamento entre o ícone e o texto */
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #bea966; /* Cor dourada no cursor */
+    width: 0;
+    opacity: 1;
+    animation: typing 3s steps(30) 1s infinite normal both, blinkCursor 500ms steps(30) infinite;
+}
+
+/* Animação de digitação */
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+/* Animação para piscar o cursor */
+@keyframes blinkCursor {
+    0% {
+        border-right-color: #bea966; /* Cor dourada no cursor */
+    }
+    50% {
+        border-right-color: transparent;
+    }
+    100% {
+        border-right-color: #bea966;
+    }
+}
+
+/* ==== NAV-MENU ==== */
+.nav_menu_list {
+    display: flex;
+    align-items: center;
+    list-style-type: none; /* Remove as bolinhas */
+}
+
+.nav_menu_list .nav_menu_item {
+    margin: 0 2rem;
+}
+
+.nav_menu_item .nav_menu_link {
+    font-size: 16.5px;
+    line-height: 27px;
+    color: var(--link-color);
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none; /* Remove sublinhados */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav_menu_link:hover {
+    color: #bea966; /* Cor dourada no hover */
+    background-color: rgba(175, 147, 74, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ==== TOGGLE BUTTON (MENU MOBILE) ==== */
+.toggle_btn {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--lg-heading);
+    z-index: 4;
+}
+
+.nav_menu,
+.close_btn {
+    display: none;
+}
+
+/* ==== SHOW NAV MENU ==== */
+.show {
+    right: 3% !important;
+}
+
+/* ==== MEDIA QUERIES ==== */
+@media screen and (min-width: 768px) {
+    .toggle_btn {
+        display: none;
+    }
+
+    .nav_menu {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav_menu {
+        position: fixed;
+        width: 93%;
+        height: 100%;
+        display: block;
+        top: 2.5%;
+        right: -100%;
+        background-color: #fff;
+        padding: 3rem;
+        border-radius: 10px;
+        box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
+        z-index: 50;
+        transition: 0.4s;
+    }
+
+    .nav_menu_list {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 4rem;
+    }
+
+    .nav_menu_list .nav_menu_item {
+        margin: 1rem 0;
+    }
+
+    .close_btn {
+        display: block;
+        position: absolute;
+        right: 10%;
+        font-size: 25px;
+        color: #50689e;
+    }
+
+    .close_btn:hover {
+        color: #000;
+    }
+}
+
+
+footer {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: #bea966;
+    padding: 2rem;
+    text-align: center;
+  }
